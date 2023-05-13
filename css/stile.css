@@ -1,0 +1,423 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #af7cc0;
+  }
+
+  .welcome-message{
+    text-align: center;
+    font-size: 36px;
+
+  }
+  
+  .wrapperfooter {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+  
+  nav {
+    background-color: #c045df;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .title h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px; 
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .title a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .black-rect {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 0 auto;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 2em;
+}
+  .center p {
+    text-align: center;
+    margin: 50px 0;
+}
+
+  .card-2{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    background: #c045df;
+    margin-bottom: 120px;
+  }
+
+  .card-2 .img{
+    width: 30%;
+  }
+  
+  .card-2 .testo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+  }
+  .card-2 .testo2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .card-2 .testo h2 .card-2 .testo p{
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  
+  .grid {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 80px;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  main div.card {
+    background: none;
+    border-radius: 50%;
+  }
+  
+  main div.card img {
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    height: 400px;
+    width: 87%;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  main div img {
+    border-radius: 50%;
+  }
+  
+  main div.card h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  main div.card p {
+    margin: 0;
+    padding: 5 20px 20px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  main div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: auto;
+    margin: 20px auto;
+  }
+
+  img {
+    order: 1;
+    margin-right: 20px;
+    border: 15px solid #c045df;
+    border-radius: 50%;
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  figcaption {
+    order: 2;
+    margin-left: 20px;
+    font-style: italic;
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 250px;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    border: 10px solid #c045df;
+    border-radius: 25px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;   
+  }
+  
+  footer {
+    background-color: #c045df;
+    text-align: center;
+    padding: 0;
+    flex-shrink: 0;
+    height: 80px;
+    border-bottom: none;
+    
+  }
+  
+  footer p {
+    display: inline;
+    background-color: #c045df;
+    border-top: 0px solid rgba(0, 0, 0, 0.1);
+    margin: 0 40px;
+    font-size: 36px;
+    color: white;
+    height: 100px;
+  }
+
+  footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (max-width: 1080px) {
+    body {
+      background: #AF7CC0;
+    }
+    .card-2{
+      flex-direction: column;
+    }
+
+    .card-2 .testo {
+      width: 100%;
+    }
+
+    .card-2 .img{
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+}
+
+@media  (max-width: 480px) {
+  body {
+    background: #AF7CC0;
+  }  
+  .center {
+    font-size: 24px;
+  }
+  .center p {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: #AF7CC0;
+  }
+  .card-2{
+    flex-direction: column;
+  }
+
+  .card-2 .testo {
+    width: 100%;
+  }
+
+  .card-2 .img{
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+
+  main div.card h2 {
+    font-size: 16px;
+  }
+
+  main div.card p {
+    font-size: 12px;
+  }
+
+  .center {
+    font-size: 36px;
+  }
+  .center p {
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .center {
+    font-size: 1.5em;
+  }
+  main div.card {
+    background: none;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  main div.card img {
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    height: 400px;
+    width: 87%;
+    border-radius: 50%;
+    margin: 0 46px;
+  }
+  .grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 80px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: auto;
+    margin: 20px auto;
+  }
+  
+    img {
+      max-width: 75%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+
+  figcaption {
+    order: 2;
+    margin-left: 20px;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .center {
+    font-size: 1em;
+  }
+  main div.card {
+    background: none;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  main div.card img {
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    height: 400px;
+    width: 87%;
+    border-radius: 50%;
+    margin: 0 46px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: auto;
+    margin: 20px auto;
+  }
+
+  img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    order: 2;
+    margin-left: 20px;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: left;
+    font-size: 1em;
+    padding: 15px;
+  }
+}
